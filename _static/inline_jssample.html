@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>jssample</title>
+<TITLE></TITLE>
+<SCRIPT language="JavaScript">
+<!--
+// オプションメニュー
+function optionMenu2() {
+  var msg= "";
+  
+  if (document.om.q1v1.checked) {
+      msg = msg + "あ";
+  }
+  if (document.om.q1v2.checked) {
+      msg = msg + "あ";
+  }
+  if (document.om.q1v3.checked) {
+      msg = msg + "あ";
+  }
+  if (document.om.q1v4.checked) {
+      msg = msg + "あ";
+  }
+  if (document.om.q1v5.checked) {
+      msg = msg + "あ";
+  }
+  if (document.om.q2v1.checked) {
+      msg = msg + "あ";
+  }
+  if (document.om.q2v2.checked) {
+      msg = msg + "あ";
+  }
+  if (document.om.q2v3.checked) {
+      msg = msg + "あ";
+  }
+  if (document.om.q2v4.checked) {
+      msg = msg + "あ";
+  }
+  if (document.om.q2v5.checked) {
+      msg = msg + "あ";
+  }
+  if (document.om.q3v1.checked) {
+      msg = msg + "あ";
+  }
+  if (document.om.q3v2.checked) {
+      msg = msg + "あ";
+  }
+  if (document.om.q3v3.checked) {
+      msg = msg + "あ";
+  }
+  if (document.om.q3v4.checked) {
+      msg = msg + "あ";
+  }
+  if (document.om.q3v5.checked) {
+      msg = msg + "あ";
+  }
+  
+  document.om.txtfld.value = "ボタンを押した" + msg;
+}//-->
+
+<!--
+function optionMenu2_clear() {
+  document.om.txtfld.value = ""
+}//-->
+
+</SCRIPT>
+</HEAD>
+<BODY bgcolor="#ffffff">
+<FORM name="om">
+
+<INPUT type="button" value="GO!" onClick="optionMenu2()">
+<INPUT type="button" value="てきすとぼっくすくりあ" onClick="optionMenu2_clear()">
+
+<p>いちれつめ<br>
+<input type="checkbox" name="q1v1" value="v1"> その1
+<input type="checkbox" name="q1v2" value="v2"> その2
+<input type="checkbox" name="q1v3" value="v3"> その3
+<input type="checkbox" name="q1v4" value="v4"> その4
+<input type="checkbox" name="q1v5" value="v5"> その5
+</p>
+
+<p>にれつめ<br>
+<input type="checkbox" name="q2v1" value="v1"> その1
+<input type="checkbox" name="q2v2" value="v2"> その2
+<input type="checkbox" name="q2v3" value="v3"> その3
+<input type="checkbox" name="q2v4" value="v4"> その4
+<input type="checkbox" name="q2v5" value="v5"> その5
+</p>
+
+<p>さんれつめ<br>
+<input type="checkbox" name="q3v1" value="v1"> その1
+<input type="checkbox" name="q3v2" value="v2"> その2
+<input type="checkbox" name="q3v3" value="v3"> その3
+<input type="checkbox" name="q3v4" value="v4"> その4
+<input type="checkbox" name="q3v5" value="v5"> その5
+</p>
+
+<INPUT type="textfield" size="60" name="txtfld" value="">
+
+
+</FORM>
+</BODY>
+</HTML>
