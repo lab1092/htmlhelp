@@ -57,6 +57,7 @@ Generic Admonition
 タイトルと本文をクラスでくくった形になります。
 
 ::
+
    <document source="test data">
    <admonition classes="admonition-and-by-the-way">
       <title>

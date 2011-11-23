@@ -1,3 +1,5 @@
+:orphan:
+
 ===========================================================
 LibreOffice+JODConverterを使って、reSTからPDFを作ってみる。
 ===========================================================
@@ -118,6 +120,8 @@ start.bat
 
 LibreOfficeを「待ち受け」状態にしておきます。これにJODconverterからファイル変換の命令を出すわけです。
 
+::
+
    set sofficeexe="C:\Program Files\LibreOffice 3\program\soffice.exe"
    %sofficeexe% -headless -accept="socket,port=8100;urp;" -nofirststartwizard 
 
@@ -127,12 +131,16 @@ rst2odt.bat
 
 スタイルシートオプションに"styles.odt"を指定したものを作成しておきます。
 
+::
+
    c:\python26\python.exe C:\Python26\Scripts\rst2odt.py --stylesheet=styles.odt sample.rst sample.odt
 
 odt2pdf.bat
 ~~~~~~~~~~~~
 
 JODconverterを実行するためのバッチファイルです。 start.batを実行してから、これを実行します。
+
+::
 
    java -jar C:\usr\w32bin\jodconverter-2.2.2\lib\jodconverter-cli-2.2.2.jar sample.odt sample.pdf
 
